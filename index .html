@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Rolling App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Rolling App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<body>
+  <div class="flex justify-center mt-4">
+    <div class="w-full max-w-md">
+      <div class="bg-white rounded-lg p-4 shadow">
+        <label for="dice-input" class="block text-gray-700 font-bold mb-2">Roll Dem Bones!</label>
+        <input id="dice-input" class="appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full mb-2" type="text" placeholder="e.g. 2d6+3d10">
+
+        <label for="modifier-input" class="block text-gray-700 font-bold mb-2">Modifier:</label>
+        <input id="modifier-input" class="appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full mb-2" type="number" placeholder="e.g. +3">
+
+        <button id="roll-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">Send it!</button>
+
+        <button id="clear-button" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4" type="button">Clear</button>
+
+        <div id="result-card" class="bg-white rounded-lg p-4 shadow mt-4 hidden">
+          <h2 id="result-header" class="text-lg font-bold mb-2"></h2>
+          <p id="result-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
